@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Диана Павлова](https://up.htmlacademy.ru/adaptive/30/user/2189703).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
