@@ -5,13 +5,11 @@
     <title>Кэт энерджи - Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="header">
-        <a class="header__logo logo" href="./index.html">
-          <img class="logo__pic" src="././images/logo-pic.svg" width="60" height="50" alt="Иконка кота.">
-          <img class="logo__text logo-text" src="./images/logo-text.svg" width="108" height="18" alt="Название сайта - 'Кэт энерджи'.">
+        <a class="header__logo" href="/">
+          <img src="./images/logo-header-mobile.svg" width="108" height="18" alt="Логотип сайта - 'Кэт энерджи'.">
         </a>
         <nav class="header__nav-page nav-page">
           <button class="nav-page__toggle" type="button">
@@ -19,10 +17,10 @@
           </button>
           <ul class="nav-page__list">
             <li class="nav-page__item">
-              <a class="nav-page__link" href="./index.html">Главная</a>
+              <a class="nav-page__link" href="/">Главная</a>
             </li>
             <li class="nav-page__item nav-page__item--current">
-              <a class="nav-page__link" href="/">Каталог продукции</a>
+              <a class="nav-page__link" href="#">Каталог продукции</a>
             </li>
             <li class="nav-page__item">
               <a class="nav-page__link" href="./form.html">Подбор программы</a>
@@ -37,7 +35,7 @@
         <h2 class="cards__title visually-hidden">Карточки товаров.</h2>
         <ul class="cards__list card">
           <li class="card__item">
-            <a class="card__link-desc" href="/">
+            <a class="card__link-desc" href="#">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
               <div class="card__picture">
                 <img class="card__img" src="./images/catalog-1.jpg" width="68" height="86" alt="Фотография Cat Energy PRO 500 г с курицей.">
@@ -60,7 +58,7 @@
             <a class="card__link-form" href="./form.html">Заказать</a>
           </li>
           <li class="card__item">
-            <a class="card__link-desc" href="/">
+            <a class="card__link-desc" href="#">
               <h3 class="card__title">Cat Energy PRO 1000 г</h3>
               <div class="card__picture">
                 <img class="card__img" src="./images/catalog-2.jpg" width="84" height="100" alt="Фотография Cat Energy PRO 1000 г с курицей.">
@@ -83,7 +81,7 @@
             <a class="card__link-form" href="./form.html">Заказать</a>
           </li>
           <li class="card__item">
-            <a class="card__link-desc" href="/">
+            <a class="card__link-desc" href="#">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
               <div class="card__picture">
                 <img class="card__img" src="./images/catalog-3.jpg" width="68" height="86" alt="Фотография Cat Energy PRO 500 г с рыбой.">
@@ -106,7 +104,7 @@
             <a class="card__link-form" href="./form.html">Заказать</a>
           </li>
           <li class="card__item">
-            <a class="cards__link-desc" href="/">
+            <a class="cards__link-desc" href="#">
               <h3 class="card__title">Cat Energy PRO 500 г</h3>
               <div class="card__picture">
                 <img class="card__img" src="./images/catalog-4.jpg" width="84" height="100" alt="Фотография Cat Energy PRO 1000 г с рыбой.">
@@ -129,7 +127,7 @@
             <a class="card__link-form" href="./form.html">Заказать</a>
           </li>
           <li class="card__item">
-            <a class="card__link-desc" href="/">
+            <a class="card__link-desc" href="#">
               <h3 class="card__title">Cat Energy SLIM 500 г</h3>
               <div class="card__picture">
                 <img class="card__img" src="./images/catalog-5.jpg" width="68" height="86" alt="Фотография Cat Energy PRO 500 г с гречкой.">
@@ -152,7 +150,7 @@
             <a class="card__link-form" href="./form.html">Заказать</a>
           </li>
           <li class="card__item">
-            <a class="card__link-desc" href="/">
+            <a class="card__link-desc" href="#">
               <h3 class="card__title">Сat Energy SLIM 1000 г</h3>
               <div class="card__picture">
                 <img class="card__img" src="./images/catalog-6.jpg" width="84" height="100" alt="Фотография Cat Energy PRO 1000 г с гречкой.">
@@ -175,7 +173,7 @@
             <a class="card__link-form" href="./form.html">Заказать</a>
           </li>
           <li class="card__item">
-            <a class="card__link-desc" href="/">
+            <a class="card__link-desc" href="#">
               <h3 class="card__title">Сat Energy SLIM 500 г</h3>
               <div class="card__picture">
                 <img class="card__img" src="./images/catalog-7.jpg" width="68" height="86" alt="Фотография Cat Energy PRO 500 г с рисом.">
@@ -200,7 +198,7 @@
           <li class="card__item item-more">
             <h3 class="item-more__title card__title">Показать еще 100500 товаров</h3>
             <p class="item-more__text">На самом деле вкусов гораздо больше!</p>
-            <button class="item-more__button" type="button">Показать все</button>
+            <a class="item-more__button" type="button" href="#">Показать все</a>
           </li>
         </ul>
       </section>
@@ -210,42 +208,34 @@
         <ul class="additional-products__list product">
           <li class="product__item">
             <h3 class="product__title">Сахарозаменитель</h3>
-            <table class="product__desc">
-              <tr>
-                <td>1 упаковка (100 г)</td>
-                <td>200 ₽</td>
-              </tr>
-            </table>
+            <div class="product__desc">
+                <span>1 упаковка (100 г)</span>
+                <span>200 ₽</span>
+            </div>
             <a class="product__link-form" href="./form.html">Заказать</a>
           </li>
           <li class="product__item">
             <h3 class="product__title">Питьевая вода</h3>
-            <table class="product__desc">
-              <tr>
-                <td>5 литров</td>
-                <td>50 ₽</td>
-              </tr>
-            </table>
+            <div class="product__desc">
+                <span>5 литров</span>
+                <span>50 ₽</span>
+            </div>
             <a class="product__link-form" href="./form.html">Заказать</a>
           </li>
           <li class="product__item">
             <h3 class="product__title">Молоко</h3>
-            <table class="product__desc">
-              <tr>
-                <td>1 литр</td>
-                <td>100 ₽</td>
-              </tr>
-            </table>
+            <div class="product__desc">
+                <span>1 литр</span>
+                <span>100 ₽</span>
+            </div>
             <a class="product__link-form" href="./form.html">Заказать</a>
           </li>
           <li class="product__item">
             <h3 class="product__title">Витамины</h3>
-            <table class="product__desc">
-              <tr>
-                <td>1 упаковка (30 г)</td>
-                <td>300 ₽</td>
-              </tr>
-            </table>
+            <div class="product__desc">
+                <span>1 упаковка (30 г)</span>
+                <span>300 ₽</span>
+            </div>
             <a class="product__link-form" href="./form.html">Заказать</a>
           </li>
         </ul>
@@ -256,36 +246,39 @@
 
       <section class="contacts">
         <h2 class="contacts__title visually-hidden">Адрес магазина "Кэт энерджи".</h2>
-        <p class="contacts__slogan">
-          Приглашаем к сотрудничеству дилеров!
-        </p>
-        <p class="contacts__address">
-          ул. Большая <br>Конюшенная, д. 19/8
-          <span>Санкт-Петербург</span>
-        </p>
+        <div class="contacts__text">
+          <p class="contacts__slogan">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <p class="contacts__address">
+            ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+
         <img class="contacts__location" src="./images/location.jpg" alt="Расположение магазина 'Кэт энерджи' на карте." width="320" height="362">
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__logo logo" href="./index.html">
-          <img class="logo__text logo-text" src="./images/logo-text.svg" width="108" height="18" alt="Название сайта - 'Кэт энерджи' ">
+        <a class="footer__logo" href="/">
+          <img src="./images/logo-footer.svg" width="108" height="18" alt="Логотип сайта - 'Кэт энерджи' ">
         </a>
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link link social__link--vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Академия Вконтакте</span>
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <img src="./images/vk.svg" width="28" height="22" alt="Академия Вконтакте">
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Академия в Ютубе</span>
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <img src="./images/youtube.svg" width="28" height="22" alt="Академия в Ютубе">
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Академия в Телеграмм</span>
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <img src="./images/telegramm.svg" width="28" height="22" alt="Академия в Телеграмм<">
               </a>
             </li>
           </ul>
@@ -296,5 +289,6 @@
         </a>
       </div>
     </footer>
+    <script src="scripts/index.js" defer></script>
   </body>
 </html>
