@@ -14,8 +14,8 @@
     <header class="header">
         <a class="header__logo" href="/">
           <picture>
-            <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/logo-header-desktop.svg" width="174" height="50">
-            <source type="image/jpeg" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="174" height="50">
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header-desktop.svg" width="174" height="50">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="174" height="50">
             <img src="images/logo-header-mobile.svg" width="108" height="18" alt="Логотип сайта - 'Кэт энерджи'.">
           </picture>
         </a>
@@ -28,7 +28,7 @@
               <a class="nav-page__link" href="/">Главная</a>
             </li>
             <li class="nav-page__item">
-              <a class="nav-page__link" href="./catalog.html">Каталог продукции</a>
+              <a class="nav-page__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="nav-page__item  nav-page__item--current">
               <a class="nav-page__link" href="#">Подбор программы</a>
@@ -123,7 +123,11 @@
           ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8
           <span>Санкт-Петербург</span>
         </p>
-        <img class="contacts__location" src="./images/location.jpg" alt="Расположение магазина 'Кэт энерджи' на карте." width="320" height="362">
+        <picture>
+          <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x" width="1440" height="400">
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x" width="768" height="400">
+          <img class="contacts__location" src="images/map/map-mobile@1x.jpg" srcset="images/map/map-mobile@2x.jpg 2x" alt="Расположение магазина 'Кэт энерджи' на карте." width="320" height="362">
+        </picture>
       </section>
     </main>
     <footer class="footer">
