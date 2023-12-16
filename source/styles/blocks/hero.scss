@@ -1,0 +1,45 @@
+.hero {
+  height: 480px;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 302px;
+    width: 320px;
+    background: url("../../images/background/bg-hero-mobile@1x.jpg") no-repeat;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 302px;
+    width: 320px;
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: -1;
+  }
+}
+
+.hero__title {
+  @include title($white-color-text);
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.hero__slogan {
+  @include title-uppercase($white-color-text);
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.hero__link {
+  @include button($white-color-text, $bg-green);
+}
+

@@ -1,0 +1,19 @@
+.features__title {
+  @include title($black-color-text);
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.features__item {
+  &::marker {
+    font-size: 0;
+  }
+}
+
+.features__icon {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  background-color: $bg-green;
+}

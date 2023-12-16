@@ -1,0 +1,14 @@
+.item-more__title {
+  @include title-uppercase($black-color-text1);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.item-more__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.item-more__button {
+  @include button($base-color-text, $bg-grey);
+}

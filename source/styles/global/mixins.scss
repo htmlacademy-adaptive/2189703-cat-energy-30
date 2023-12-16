@@ -1,0 +1,46 @@
+@mixin font-face($font-family, $font-src, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src: $font-src;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    display: swap;
+  }
+}
+
+@mixin title($color) {
+  font-family: $secondary-font;
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin title-uppercase($color) {
+  font-family: $secondary-font;
+  font-weight: 400;
+  color: $color;
+  text-transform: uppercase;
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin button($color, $bg-color) {
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color;
+  text-transform: uppercase;
+
+  background-color: $bg-color;
+}
+

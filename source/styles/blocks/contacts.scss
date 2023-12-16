@@ -1,0 +1,14 @@
+.contacts__map {
+  height: 362px;
+  background: url("../../images/map/map-mobile@1x.jpg") no-repeat;
+}
+
+.contacts__slogan {
+  @include title-uppercase($black-color-text1);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts__address {
+  line-height: 20px;
+}

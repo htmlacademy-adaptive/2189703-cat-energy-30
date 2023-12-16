@@ -1,0 +1,11 @@
+.header-form__title {
+  @include title($black-color-text);
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.header-form__text {
+  @include title-uppercase($black-color-text);
+  font-size: 14px;
+  line-height: 18px;
+}
