@@ -1,0 +1,19 @@
+
+.card__link-desc {
+  text-decoration: none;
+}
+
+.card__title {
+  @include title-uppercase($black-color-text2);
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card__desc {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__link-form {
+  @include button($white-color-text, $bg-green);
+}

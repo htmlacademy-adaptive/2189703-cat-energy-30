@@ -1,0 +1,13 @@
+.product__title {
+  @include title-uppercase($black-color-text2);
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.product__desc {
+  line-height: 14px;
+}
+
+.product__link-form {
+  @include button($white-color-text, $bg-green);
+}

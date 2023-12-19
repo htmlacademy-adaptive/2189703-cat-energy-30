@@ -1,0 +1,5 @@
+.radio {
+  @include title-uppercase($base-color-text);
+  font-size: 16px;
+  line-height: 18px;
+}

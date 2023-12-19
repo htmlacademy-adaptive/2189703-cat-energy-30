@@ -12,11 +12,12 @@
   </head>
   <body class="page__body">
     <header class="header">
+      <div class="header__wrapper">
         <a class="header__logo" href="/">
           <picture>
             <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header-desktop.svg" width="174" height="50">
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="174" height="50">
-            <img src="images/logo-header-mobile.svg" width="108" height="18" alt="Логотип сайта - 'Кэт энерджи'.">
+            <img src="images/logo-header-mobile.svg" width="190" height="38" alt="Кэт энерджи - на главную.">
           </picture>
         </a>
         <nav class="header__nav-page nav-page">
@@ -24,8 +25,8 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="nav-page__list">
-            <li class="nav-page__item  nav-page__item--current">
-              <a class="nav-page__link" href="/">Главная</a>
+            <li class="nav-page__item">
+              <a class="nav-page__link nav-page__link--current" href="#">Главная</a>
             </li>
             <li class="nav-page__item">
               <a class="nav-page__link" href="catalog.html">Каталог продукции</a>
@@ -35,15 +36,19 @@
             </li>
           </ul>
         </nav>
+      </div>
     </header>
     <main class="main">
       <h1 class="main__title visually-hidden">На нашем сайте лучший выбор питания для котов.</h1>
       <section class="hero">
-        <h2 class="hero__title">Функциональное
-          питание для котов</h2>
-        <span class="hero__slogan">Занялся собой? Займись котом!</span>
-        <a class="hero__link button" href="form.html">Подобрать программу</a>
-        <div class="hero__image">
+        <div class="hero__wrapper">
+          <div class="hero__desk">
+            <h2 class="hero__title">Функциональное питание для котов</h2>
+            <span class="hero__slogan">Занялся собой? Займись котом!</span>
+            <a class="hero__link" href="form.html">Подобрать программу</a>
+          </div>
+        </div>
+        <div class="hero__picture">
           <picture>
             <source type="image/png" media="(min-width: 1440px)" srcset="images/hero/hero-desktop@1x.png 1x, images/hero/hero-desktop@2x.png 2x" width="552" height="499">
             <source type="image/png" media="(min-width: 768px)" srcset="images/hero/hero-tablet@1x.png 1x, images/hero/hero-tablet@2x.png 2x" width="709" height="609">
@@ -54,34 +59,28 @@
 
       <section class="programm">
         <h2 class="programm__title visually-hidden">Выберите программу для вашего питомца.</h2>
-          <ul class="programm__list ">
-            <li class="programm__item">
-              <h3 class="programm__title">Похудение</h3>
-              <div class="programm__icon">
-                <img src="images/content-svg/slim-mobile.svg" width="50" height="53" alt="Похудение.">
-              </div>
-              <div class="programm__icon">
-                Иконка в форрмате svg
-              </div>
-              <p class="programm__text">Ваш кот весит больше собаки и почти утратил способность
-                лазить по деревьям? Пора на диету! Cat Energy Slim поможет
-                вашему питомцу сбросить лишний вес.</p>
-              <a class="programm__link" href="./catalog.html">Каталог slim</a>
-            </li>
-            <li class="programm__item">
-              <h3 class="programm__title">Набор массы</h3>
-              <div class="programm__icon">
-                <img src="images/content-svg/pro-mobile.svg" width="67" height="50" alt="Набор массы.">
-              </div>
-              <div class="programm__icon">
-                Иконка в форрмате svg
-              </div>
-              <p class="programm__text">Заработать авторитет среди дворовых котов и даже собак?
-                Серия Cat Energy Pro поможет вашему коту нарастить
-                необходимые мышцы!</p>
-              <a class="programm__link" href="./catalog.html">Каталог pro</a>
-            </li>
-          </ul>
+        <ul class="programm__list">
+          <li class="programm__item">
+            <h3 class="programm__subtitle">Похудение</h3>
+            <div class="programm__icon">
+              <img src="images/content-svg/slim-mobile.svg" width="36" height="50" alt="Похудение.">
+            </div>
+            <p class="programm__text">Ваш кот весит больше собаки и почти утратил способность
+              лазить по деревьям? Пора на диету! Cat Energy Slim поможет
+              вашему питомцу сбросить лишний вес.</p>
+            <a class="programm__link" href="./catalog.html">Каталог slim</a>
+          </li>
+          <li class="programm__item">
+            <h3 class="programm__subtitle">Набор массы</h3>
+            <div class="programm__icon programm__icon--pro">
+              <img src="images/content-svg/pro-mobile.svg" width="67" height="28" alt="Набор массы.">
+            </div>
+            <p class="programm__text">Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить
+              необходимые мышцы!</p>
+            <a class="programm__link" href="./catalog.html">Каталог pro</a>
+          </li>
+        </ul>
       </section>
 
       <section class="features">
@@ -89,23 +88,23 @@
         <ol class="features__list">
           <li class="features__item">
             <div class="features__icon">
-              <img src="images/content-svg/eco-mobile.svg" width="60" height="60" alt="Полезные питательные вещества.">
+              <img src="images/content-svg/leaf-mobile.svg" width="30" height="32" alt="Полезные питательные вещества.">
             </div>
             Функциональное питание содержит только полезные питательные вещества.
           </li>
           <li class="features__item">
             <div class="features__icon">
-              <img src="images/content-svg/powder-mobile.svg" width="60" height="60" alt="В виде порошка.">
+              <img src="images/content-svg/powder-mobile.svg" width="27" height="29" alt="В виде порошка.">
             </div>
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
           <li class="features__item">
             <div class="features__icon">
-              <img src="images/content-svg/eating-mobile.svg" width="60" height="60" alt="Заменит прием еды.">
+              <img src="images/content-svg/eat-mobile.svg" width="26" height="30" alt="Заменит прием еды.">
             </div>
             Замените один-два приема обычной еды на наше функциональное питание.</li>
           <li class="features__item">
             <div class="features__icon">
-              <img src="images/content-svg/time-mobile.svg" width="60" height="60" alt="Подействует через месяц.">
+              <img src="images/content-svg/time-mobile.svg" width="27" height="31" alt="Подействует через месяц.">
             </div>
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
           </ol>
@@ -115,21 +114,19 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__info info">
-            <dl class="info__element">
-              <dt class="info__term">5 КГ</dt>
-              <dd class="info__definition">Снижение веса</dd>
-            </dl>
-            <dl class="info__element">
-              <dt class="info__term">60 ДНЕЙ</dt>
-              <dd class="info__definition">Затрачено времени</dd>
-            </dl>
-            <p class="info__price">
-              <span>Затраты на питание:</span>
-              <span>15 000 РУБ.</span>
-            </p>
+          <dl class="example__element">
+            <dt class="example__term">Снижение веса</dt>
+            <dd class="example__definition">5 КГ</dd>
+          </dl>
+          <dl class="example__element">
+            <dt class="example__term">Затрачено времени</dt>
+            <dd class="example__definition">60 ДНЕЙ</dd>
+          </dl>
+          <dl class="example__element example__element--price">
+            <dt class="example__term example__term--price">Затраты на питание:</dt>
+            <dd class="example__definition example__definition--price">15 000 РУБ.</dd>
+          </dl>
           </div>
-        </div>
         <div class="example__slider slider">
           <div class="slider__left">
             <picture>
@@ -151,45 +148,42 @@
 
       <section class="contacts">
         <h2 class="contacts__title visually-hidden">Адрес магазина "Кэт энерджи".</h2>
-        <p class="contacts__slogan">
-          Приглашаем к сотрудничеству дилеров!
-        </p>
-        <p class="contacts__address">
-          ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8
-          <span>Санкт-Петербург</span>
-        </p>
-        <picture>
-          <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x" width="1440" height="400">
-          <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x" width="768" height="400">
-          <img class="contacts__location" src="images/map/map-mobile@1x.jpg" srcset="images/map/map-mobile@2x.jpg 2x" alt="Расположение магазина 'Кэт энерджи' на карте." width="320" height="362">
-        </picture>
+        <div class="contacts__text">
+          <p class="contacts__slogan">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <p class="contacts__address">
+            ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+        <div class="contacts__map"></div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="/">
-          <img src="./images/logo-footer.svg" width="128" height="24" alt="Логотип сайта - 'Кэт энерджи' ">
+          <img src="./images/logo-footer.svg" width="128" height="24" alt="Кэт энерджи - на главную.">
         </a>
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <img src="./images/content-svg/vk.svg" width="28" height="22" alt="Академия Вконтакте">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="./images/content-svg/youtube.svg" width="28" height="22" alt="Академия в Ютубе">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <img src="./images/content-svg/telegramm.svg" width="28" height="22" alt="Академия в Телеграмм<">
-              </a>
-            </li>
-          </ul>
 
-        </div>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <img src="./images/content-svg/vk.svg" width="28" height="22" alt="Академия Вконтакте">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="./images/content-svg/youtube.svg" width="28" height="22" alt="Академия в Ютубе">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <img src="./images/content-svg/telegramm.svg" width="28" height="22" alt="Академия в Телеграмм<">
+            </a>
+          </li>
+        </ul>
+
         <a class="footer__developed" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
         </a>

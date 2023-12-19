@@ -1,0 +1,41 @@
+.programm__list {
+  @include list;
+}
+
+.programm__item {
+  background-color: $bg-grey;
+}
+
+.programm__subtitle {
+  @include title-uppercase($black-color-text);
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.programm__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: $bg-green;
+  border-radius: 50%;
+}
+
+.programm__icon img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.programm__icon--pro img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) scale(1.2);
+}
+
+.programm__link {
+  @include title-uppercase($black-color-text);
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+}
