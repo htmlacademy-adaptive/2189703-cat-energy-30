@@ -1,7 +1,13 @@
 .contacts__map {
-  height: 362px;
-  background: url("../../images/map/map-mobile@1x.jpg") no-repeat;
+  min-height: 362px;
+  background-image:
+    image-set(
+    url("../../images/map/map-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("../../images/map/map-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  background-repeat: no-repeat;
 }
+
 
 .contacts__slogan {
   @include title-uppercase($black-color-text1);

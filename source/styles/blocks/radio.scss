@@ -1,3 +1,5 @@
 .radio {
-  margin: 0;
+  @include title-uppercase($base-color-text);
+  font-size: 16px;
+  line-height: 18px;
 }

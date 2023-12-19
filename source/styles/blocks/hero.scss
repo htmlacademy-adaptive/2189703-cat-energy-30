@@ -1,29 +1,17 @@
 .hero {
-  height: 480px;
   position: relative;
+  min-height: 480px;
+}
 
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 302px;
-    width: 320px;
-    background: url("../../images/background/bg-hero-mobile@1x.jpg") no-repeat;
-    z-index: -1;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 302px;
-    width: 320px;
-    background-color: rgba(104, 183, 56, 0.85);
-    z-index: -1;
-  }
+.hero__wrapper {
+  min-height: 302px;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/background/bg-hero-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/background/bg-hero-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  background-repeat: no-repeat;
 }
 
 .hero__title {
@@ -41,5 +29,7 @@
 
 .hero__link {
   @include button($white-color-text, $bg-green);
-}
 
+  position: absolute;
+  bottom: 0;
+}

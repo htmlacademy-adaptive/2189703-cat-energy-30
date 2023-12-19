@@ -15,9 +15,7 @@
 }
 
 @mixin title-uppercase($color) {
-  font-family: $secondary-font;
-  font-weight: 400;
-  color: $color;
+  @include title($color);
   text-transform: uppercase;
 }
 
@@ -29,7 +27,7 @@
 }
 
 @mixin button($color, $bg-color) {
-  padding: 10px 0;
+  padding: 10px 26px;
 
   display: flex;
   justify-content: center;
@@ -43,4 +41,3 @@
 
   background-color: $bg-color;
 }
-
