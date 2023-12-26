@@ -15,16 +15,18 @@
 }
 
 .input__wrap {
+  position: relative;
+
   display: flex;
   align-items: center;
 }
 
 .input__field {
+  width: 100%;
   padding: 13px;
   padding-left: 15px;
-  padding-right: 0;
+  padding-right: 32px;
   border: 1px solid $border-form;
-  position: relative;
 
   &:hover {
     border-color: $border-form-hover;
@@ -44,6 +46,8 @@
 }
 
 .input__icon {
+  position: absolute;
+  right: 12px;
   width: 20px;
   height: 20px;
   background-color: $black-color-text;
