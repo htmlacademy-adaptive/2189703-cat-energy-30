@@ -3,8 +3,30 @@
 }
 
 .footer__developed {
-  font-size: 16px;
-  line-height: 20px;
+  display: flex;
+  width: 280px;
+  height: 34px;
+  justify-content: space-between;
+  align-items: center;
   color: $base-color-text;
-  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: relative;
+    display: flex;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../images/icons/stack.svg#logo-html");
+    background-color: $base-color-text;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    background-color: $bg-green;
+  }
 }

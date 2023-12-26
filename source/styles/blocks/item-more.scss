@@ -1,7 +1,26 @@
+.item-more__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .item-more__title {
   @include title-uppercase($black-color-text1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 16px;
   line-height: 20px;
+
+  &::before {
+    content: "";
+    margin-bottom: 23px;
+    width: 30px;
+    height: 30px;
+    background: $white-color-text url("../../images/icons/stack.svg#plus") no-repeat;
+  }
 }
 
 .item-more__text {

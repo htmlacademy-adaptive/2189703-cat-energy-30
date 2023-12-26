@@ -1,5 +1,39 @@
-.radio {
+.radio__text {
   @include title-uppercase($base-color-text);
+  display: flex;
+  align-items: center;
+  gap: 15px;
   font-size: 16px;
   line-height: 18px;
+
+  &::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid#cdcdcd;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    background: url("../../images/icons/stack.svg#radio") no-repeat 50%;
+    background-size: 13px;
+  }
+}
+
+.radio__input:checked + .radio__text {
+  &::before {
+    background: url("../../images/icons/stack.svg#radio") no-repeat 50%;
+    background-size: 13px;
+  }
+}
+
+.radio__input:disabled + .radio__text {
+  &::before {
+    background: url("../../images/icons/stack.svg#radio") no-repeat 50%;
+    background-size: 13px;
+  }
+  opacity: 0.3;
 }
