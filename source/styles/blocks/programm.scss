@@ -1,3 +1,7 @@
+.programm {
+  display: grid;
+}
+
 .programm__list {
   @include list;
 }
@@ -35,7 +39,35 @@
 
 .programm__link {
   @include title-uppercase($black-color-text);
+  position: relative;
+  padding: 4px 0;
+  padding-right: 47px;
   font-size: 16px;
   line-height: 16px;
-  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 10px;
+    right: 0;
+    top: 50%;
+    mask-image: url("../../images/icons/stack.svg#arrow");
+    background-color: $black-color-text;
+    transform: translate(-10%, -50%) scale(0.7, 1);
+    transition: 0.2s;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: translateY(-50%) scale(1, 1);
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      transform: translateY(-50%) scale(1, 1);
+    }
+  }
 }

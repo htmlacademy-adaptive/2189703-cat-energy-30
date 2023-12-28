@@ -93,14 +93,16 @@
             <div class="form__control">
               <div class="input">
                 <label class="input__label" for="email">E-mail:*</label>
-                <div class="input__wrap input__wrap--icon">
+                <div class="input__wrap input__wrap--email">
                   <input class="input__field" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" required>
+                  <span class="input__icon"></span>
                 </div>
               </div>
               <div class="input">
                 <label class="input__label" for="tel">Телефон:*</label>
-                <div class="input__wrap input__wrap--icon">
+                <div class="input__wrap input__wrap--phone">
                   <input class="input__field" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+                  <span class="input__icon"></span>
                 </div>
               </div>
             </div>
@@ -108,7 +110,8 @@
 
           <div class="form__fieldset" role="group" aria-labelledby="comment">
             <div class="form__legend" id="comment">Комментарий</div>
-            <textarea class="text-area" name="comment" cols="40" rows="10">Расскажите обо всех повадках кота</textarea>
+            <label class="form__label visually-hidden" for="nature">Характер питомца.</label>
+            <textarea class="text-area" name="nature" id="nature" cols="40" rows="10">Расскажите обо всех повадках кота</textarea>
           </div>
 
           <div class="form__fieldset" role="group" aria-labelledby="add">
@@ -160,25 +163,39 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="/">
-          <img src="./images/logo-footer.svg" width="128" height="24" alt="Кэт энерджи - на главную.">
+          <svg width="128" height="24" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#logo-footer"></use>
+          </svg>
+          <span class="footer__logo-text visually-hidden">Кэт энерджи - на главную.</span>
         </a>
+
         <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
-              <img src="./images/content-svg/vk.svg" width="28" height="22" alt="Академия Вконтакте">
+              <svg width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#vk"></use>
+              </svg>
+              <span class="social__link-text visually-hidden">Академия Вконтакте.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="./images/content-svg/youtube.svg" width="28" height="22" alt="Академия в Ютубе">
+              <svg width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#youtube"></use>
+              </svg>
+              <span class="social__link-text visually-hidden">Академия в Ютубе.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://t.me/htmlacademy">
-              <img src="./images/content-svg/telegramm.svg" width="28" height="22" alt="Академия в Телеграмм<">
+              <svg width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#telegramm"></use>
+              </svg>
+              <span class="social__link-text visually-hidden">Академия в Телеграмм.</span>
             </a>
           </li>
         </ul>
+
         <a class="footer__developed" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
         </a>

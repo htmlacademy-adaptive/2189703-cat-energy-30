@@ -1,6 +1,67 @@
+.input {
+  display: flex;
+}
+
 .input,
 .input__field::placeholder {
   @include title-uppercase($base-color-text);
   font-size: 16px;
   line-height: 18px;
+}
+
+.input__label {
+  padding: 13px;
+  padding-left: 0;
+}
+
+.input__wrap {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.input__field {
+  width: 100%;
+  padding: 13px;
+  padding-left: 15px;
+  padding-right: 32px;
+  border: 1px solid $border-form;
+  outline: none;
+
+  &:hover {
+    border-color: $border-form-hover;
+  }
+
+  &:focus {
+    border: 2px solid $base-color-text;
+  }
+
+  &:focus:invalid {
+    border-color: $border-form-error;
+  }
+}
+
+.input__icon {
+  position: absolute;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: $black-color-text;
+}
+
+.input__wrap--email .input__icon {
+  mask-image: url("../../images/icons/stack.svg#email");
+}
+
+.input__wrap--phone .input__icon {
+  mask-image: url("../../images/icons/stack.svg#phone");
+}
+
+.input__field:focus + .input__icon {
+  background-color: $bg-green;
+}
+
+.input__field:focus:invalid + .input__icon {
+  background-color: $border-form-error;
 }

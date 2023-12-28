@@ -227,52 +227,57 @@
               <a class="card__link-form" href="./form.html">Заказать</a>
             </li>
             <li class="card__item item-more">
-              <h3 class="item-more__title">Показать еще 100500 товаров</h3>
-              <p class="item-more__text">На самом деле вкусов гораздо больше!</p>
-              <a class="item-more__button" href="#">Показать все</a>
+              <div class="item-more__wrap">
+                <h3 class="item-more__title">Показать еще 100500 товаров</h3>
+                <p class="item-more__text">На самом деле вкусов гораздо больше!</p>
+                <a class="item-more__button" href="#">Показать все</a>
+              </div>
             </li>
           </ul>
         </section>
 
         <section class="additional-products">
-          <h2 class="additional-products__title">Дополнительные товары</h2>
-          <ul class="additional-products__list product">
-            <li class="product__item">
-              <h3 class="product__title">Сахарозаменитель</h3>
-              <div class="product__desc">
-                  <span>1 упаковка (100 г)</span>
-                  <span>200 ₽</span>
-              </div>
-              <a class="product__link-form" href="./form.html">Заказать</a>
-            </li>
-            <li class="product__item">
-              <h3 class="product__title">Питьевая вода</h3>
-              <div class="product__desc">
-                  <span>5 литров</span>
-                  <span>50 ₽</span>
-              </div>
-              <a class="product__link-form" href="./form.html">Заказать</a>
-            </li>
-            <li class="product__item">
-              <h3 class="product__title">Молоко</h3>
-              <div class="product__desc">
-                  <span>1 литр</span>
-                  <span>100 ₽</span>
-              </div>
-              <a class="product__link-form" href="./form.html">Заказать</a>
-            </li>
-            <li class="product__item">
-              <h3 class="product__title">Витамины</h3>
-              <div class="product__desc">
-                  <span>1 упаковка (30 г)</span>
-                  <span>300 ₽</span>
-              </div>
-              <a class="product__link-form" href="./form.html">Заказать</a>
-            </li>
-          </ul>
-          <aside class="additional-products__promo promo">
-            <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
-          </aside>
+          <div class="additional-products__wrapper">
+            <h2 class="additional-products__title">Дополнительные товары</h2>
+            <ul class="additional-products__list product">
+              <li class="product__item">
+                <h3 class="product__title">Сахарозаменитель</h3>
+                <div class="product__desc">
+                    <span>1 упаковка (100 г)</span>
+                    <span>200 ₽</span>
+                </div>
+                <a class="product__link-form" href="./form.html">Заказать</a>
+              </li>
+              <li class="product__item">
+                <h3 class="product__title">Питьевая вода</h3>
+                <div class="product__desc">
+                    <span>5 литров</span>
+                    <span>50 ₽</span>
+                </div>
+                <a class="product__link-form" href="./form.html">Заказать</a>
+              </li>
+              <li class="product__item">
+                <h3 class="product__title">Молоко</h3>
+                <div class="product__desc">
+                    <span>1 литр</span>
+                    <span>100 ₽</span>
+                </div>
+                <a class="product__link-form" href="./form.html">Заказать</a>
+              </li>
+              <li class="product__item">
+                <h3 class="product__title">Витамины</h3>
+                <div class="product__desc">
+                    <span>1 упаковка (30 г)</span>
+                    <span>300 ₽</span>
+                </div>
+                <a class="product__link-form" href="./form.html">Заказать</a>
+              </li>
+            </ul>
+            <aside class="additional-products__gift gift">
+              <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+            </aside>
+          </div>
+
         </section>
       </div>
 
@@ -293,25 +298,39 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="/">
-          <img src="./images/logo-footer.svg" width="128" height="24" alt="Кэт энерджи - на главную.">
+          <svg width="128" height="24" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#logo-footer"></use>
+          </svg>
+          <span class="footer__logo-text visually-hidden">Кэт энерджи - на главную.</span>
         </a>
+
         <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
-              <img src="./images/content-svg/vk.svg" width="28" height="22" alt="Академия Вконтакте">
+              <svg width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#vk"></use>
+              </svg>
+              <span class="social__link-text visually-hidden">Академия Вконтакте.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="./images/content-svg/youtube.svg" width="28" height="22" alt="Академия в Ютубе">
+              <svg width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#youtube"></use>
+              </svg>
+              <span class="social__link-text visually-hidden">Академия в Ютубе.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://t.me/htmlacademy">
-              <img src="./images/content-svg/telegramm.svg" width="28" height="22" alt="Академия в Телеграмм<">
+              <svg width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#telegramm"></use>
+              </svg>
+              <span class="social__link-text visually-hidden">Академия в Телеграмм.</span>
             </a>
           </li>
         </ul>
+
         <a class="footer__developed" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
         </a>

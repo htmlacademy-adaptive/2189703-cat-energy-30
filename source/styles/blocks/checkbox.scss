@@ -1,5 +1,38 @@
 .checkbox__text {
   @include title-uppercase($base-color-text);
+  display: flex;
+  align-items: center;
+  gap: 15px;
   font-size: 16px;
   line-height: 18px;
+
+  &::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid#cdcdcd;
+  }
+
+  &:hover::before {
+    background: url("../../images/icons/stack.svg#checkbox") no-repeat 50%;
+    background-size: 18px 14px;
+  }
+}
+
+.checkbox__input:checked + .checkbox__text {
+  &::before {
+    background: url("../../images/icons/stack.svg#checkbox") no-repeat 50%;
+    background-size: 18px 14px;
+  }
+}
+
+.checkbox__input:disabled + .checkbox__text {
+  &::before {
+    background: url("../../images/icons/stack.svg#checkbox") no-repeat 50%;
+    background-size: 18px 14px;
+  }
+  opacity: 0.3;
 }
