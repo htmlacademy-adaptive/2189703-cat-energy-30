@@ -1,3 +1,18 @@
 .social {
   padding: 0;
 }
+
+.social__link {
+  color: $slider-color;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $bg-green;
+  }
+
+  &:active {
+    color: $bg-green;
+    opacity: 0.3;
+  }
+}

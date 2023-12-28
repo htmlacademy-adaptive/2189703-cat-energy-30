@@ -2,6 +2,20 @@
   background-color: $bg-grey;
 }
 
+.footer__logo {
+  color: $black-color-text1;
+  transition: 0.2s;
+
+  &:hover,
+  &:focus {
+    color: $logo-focus;
+  }
+
+  &:active {
+    color: $logo-active;
+  }
+}
+
 .footer__developed {
   display: flex;
   width: 280px;
@@ -9,6 +23,7 @@
   justify-content: space-between;
   align-items: center;
   color: $base-color-text;
+  transition: 0.2s;
 
   &:active {
     opacity: 0.3;

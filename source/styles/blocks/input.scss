@@ -27,6 +27,7 @@
   padding-left: 15px;
   padding-right: 32px;
   border: 1px solid $border-form;
+  outline: none;
 
   &:hover {
     border-color: $border-form-hover;
@@ -36,12 +37,8 @@
     border: 2px solid $base-color-text;
   }
 
-  &:invalid {
-    border: 2px solid $border-form-error;
-  }
-
-  &:invalid:placeholder-shown {
-    border: 1px solid $border-form;
+  &:focus:invalid {
+    border-color: $border-form-error;
   }
 }
 
@@ -61,18 +58,10 @@
   mask-image: url("../../images/icons/stack.svg#phone");
 }
 
-.input__field:hover + .input__icon {
-  background-color: $black-color-text2;
-}
-
-.input__field:invalid:placeholder-shown + .input__icon {
-  background-color: $black-color-text;
-}
-
-.input__field:invalid + .input__icon {
-  background-color: $border-form-error;
-}
-
 .input__field:focus + .input__icon {
   background-color: $bg-green;
+}
+
+.input__field:focus:invalid + .input__icon {
+  background-color: $border-form-error;
 }

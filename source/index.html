@@ -11,35 +11,34 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
-    <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo" href="/">
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header-desktop.svg" width="174" height="50">
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="174" height="50">
-            <img src="images/logo-header-mobile.svg" width="190" height="38" alt="Кэт энерджи - на главную.">
-          </picture>
-        </a>
-        <nav class="header__nav-page nav-page">
-          <button class="nav-page__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="nav-page__list">
-            <li class="nav-page__item">
-              <a class="nav-page__link nav-page__link--current" href="#">Главная</a>
-            </li>
-            <li class="nav-page__item">
-              <a class="nav-page__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="nav-page__item">
-              <a class="nav-page__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main">
-      <h1 class="main__title visually-hidden">На нашем сайте лучший выбор питания для котов.</h1>
+    <div class="page__wrapper">
+      <header class="header">
+        <div class="header__wrapper">
+          <a class="header__logo" href="/">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header-desktop.svg" width="174" height="50">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="174" height="50">
+              <img src="images/logo-header-mobile.svg" width="190" height="38" alt="Кэт энерджи - на главную.">
+            </picture>
+          </a>
+          <nav class="header__nav-page nav-page">
+            <button class="nav-page__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="nav-page__list">
+              <li class="nav-page__item">
+                <a class="nav-page__link nav-page__link--current" href="#">Главная</a>
+              </li>
+              <li class="nav-page__item">
+                <a class="nav-page__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="nav-page__item">
+                <a class="nav-page__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
       <section class="hero">
         <div class="hero__wrapper">
           <div class="hero__desk">
@@ -56,6 +55,10 @@
           </picture>
         </div>
       </section>
+    </div>
+
+    <main class="main">
+      <h1 class="main__title visually-hidden">На нашем сайте лучший выбор питания для котов.</h1>
 
       <section class="programm">
         <h2 class="programm__title visually-hidden">Выберите программу для вашего питомца.</h2>
@@ -149,7 +152,10 @@
             </picture>
           </div>
           <button class="slider__control" type="button">
-            <span class="visually-hidden">Было — стало.</span>
+              <svg width="40" height="40" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#thumb"></use>
+              </svg>
+              <span class="slider__control-text visually-hidden">Было — стало.</span>
           </button>
         </div>
       </section>
@@ -171,23 +177,35 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="/">
-          <img src="./images/logo-footer.svg" width="128" height="24" alt="Кэт энерджи - на главную.">
+          <svg width="128" height="24" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#logo-footer"></use>
+          </svg>
+          <span class="footer__logo-text visually-hidden">Кэт энерджи - на главную.</span>
         </a>
 
         <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
-              <img src="./images/content-svg/vk.svg" width="28" height="22" alt="Академия Вконтакте">
+              <svg width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#vk"></use>
+              </svg>
+              <span class="social__link-text visually-hidden">Академия Вконтакте.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="./images/content-svg/youtube.svg" width="28" height="22" alt="Академия в Ютубе">
+              <svg width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#youtube"></use>
+              </svg>
+              <span class="social__link-text visually-hidden">Академия в Ютубе.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://t.me/htmlacademy">
-              <img src="./images/content-svg/telegramm.svg" width="28" height="22" alt="Академия в Телеграмм<">
+              <svg width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#telegramm"></use>
+              </svg>
+              <span class="social__link-text visually-hidden">Академия в Телеграмм.</span>
             </a>
           </li>
         </ul>

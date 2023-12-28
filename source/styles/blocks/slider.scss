@@ -46,33 +46,30 @@
 
 .slider__control {
   position: absolute;
-  left: calc(50% - 2px);
-
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 4px;
   height: 256px;
   padding: 0;
-
+  color: $slider-color;
+  background-color: $slider-color;
   border-radius: 2px;
   border: none;
-  background-color: #666666;
-  z-index: 3;
+  transition: 0.2s ease-in-out;
 
-  &:hover {
+
+  &:hover,
+  &:focus {
+    color: $bg-green;
     background-color: $bg-green;
   }
 
-  &::before {
-    content: "";
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-
-    width: 40px;
-    height: 40px;
-    background-image: url("../../images/icons/stack.svg#thumb");
-    transform: translateX(-50%);
+  &:active {
+    color: $bg-green2;
+    background-color: $bg-green2;
+    opacity: 0.6;
   }
 }
