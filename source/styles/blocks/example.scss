@@ -7,12 +7,12 @@
     padding-top: 45px;
     padding-bottom: 101px;
     border-top: 1px solid $border-grey;
-    background-image:linear-gradient($white-color-text 70%, $bg-grey2 70%, $bg-grey2 100%);
+    background-image: linear-gradient($white-color-text 70%, $bg-grey2 70%, $bg-grey2 100%);
   }
 
   @media (min-width: $desctop-width) {
     padding-top: 69px;
-    background-image:linear-gradient($white-color-text 30%, $bg-grey2 30%, $bg-grey2 100%);
+    background-image: linear-gradient($white-color-text 30%, $bg-grey2 30%, $bg-grey2 100%);
     border: none;
   }
 }
