@@ -1,11 +1,39 @@
-.contacts__map {
-  min-height: 362px;
-  background-image:
-    image-set(
-    url("../../images/map/map-mobile@1x.jpg") type("image/jpeg") 1x,
-    url("../../images/map/map-mobile@2x.jpg") type("image/jpeg") 2x
-    );
-  background-repeat: no-repeat;
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    width: 1420px;
+    height: 400px;
+  }
+}
+
+.contacts__text {
+  @include center;
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    min-width: 628px;
+    padding: 61px 40px;
+  }
+
+  @media (min-width: $desctop-width) {
+    position: absolute;
+    margin: 0;
+    top: 95px;
+    left: 100px;
+    width: 565px;
+    padding: 60px 78px 60px 80px;
+    z-index: 1;
+    background-color: $white-color-text;
+  }
 }
 
 
@@ -13,8 +41,63 @@
   @include title-uppercase($black-color-text1);
   font-size: 16px;
   line-height: 20px;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
+  margin: 0;
+  width: 140px;
   line-height: 20px;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+    align-items: end;
+    width: 157px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desctop-width) {
+    text-align: start;
+    align-items: start;
+  }
+}
+
+.contacts__map {
+  min-height: 362px;
+  min-width: 320px;
+  background-image:
+    image-set(
+    url("../../images/map/map-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("../../images/map/map-mobile@2x.jpg") type("image/jpeg") 2x
+    );
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    min-height: 400px;
+    background-image:
+      image-set(
+      url("../../images/map/map-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/map/map-tablet@2x.jpg") type("image/jpeg") 2x
+      );
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 1420px;
+    background-image:
+      image-set(
+      url("../../images/map/map-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/map/map-desktop@2x.jpg") type("image/jpeg") 2x
+      );
+    }
 }

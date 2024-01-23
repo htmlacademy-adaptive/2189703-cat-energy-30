@@ -1,3 +1,9 @@
+.nav-page__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .nav-page__list {
   @include list;
   text-align: center;
@@ -8,4 +14,14 @@
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }

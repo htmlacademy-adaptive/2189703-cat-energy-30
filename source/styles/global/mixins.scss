@@ -9,9 +9,17 @@
 }
 
 @mixin title($color) {
+  margin: 0;
   font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
   font-weight: 400;
   color: $color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 @mixin title-uppercase($color) {
@@ -40,4 +48,17 @@
   text-transform: uppercase;
 
   background-color: $bg-color;
+}
+
+@mixin center {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 1220px;
+    margin: 0 100px;
+  }
 }
