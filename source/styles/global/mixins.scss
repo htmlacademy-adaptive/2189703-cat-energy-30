@@ -48,6 +48,14 @@
   text-transform: uppercase;
 
   background-color: $bg-color;
+
+  &:hover {
+    background-color: $bg-green2;
+  }
+
+  &:active {
+    color: rgba($white-color-text, $alpha: 0.3);
+  }
 }
 
 @mixin center {
@@ -58,7 +66,6 @@
   }
 
   @media (min-width: $desctop-width) {
-    width: 1220px;
     margin: 0 100px;
   }
 }

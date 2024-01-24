@@ -1,3 +1,22 @@
+.radio {
+  padding-top: 22px;
+  padding-bottom: 19px;
+  display: grid;
+  gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-bottom: 27px;
+    padding-left: 27px;
+    border: 1px solid $border-form;
+    gap: 12px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 25px 28px;
+  }
+}
+
 .radio__text {
   @include title-uppercase($base-color-text);
   display: flex;
@@ -5,6 +24,12 @@
   gap: 15px;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    gap: 20px;
+  }
 
   &::before {
     content: "";
@@ -15,11 +40,20 @@
     height: 30px;
     border: 1px solid#cdcdcd;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &:hover::before {
     background: url("../../images/icons/stack.svg#radio") no-repeat 50%;
-    background-size: 13px;
+    background-size: 15px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 20px;
+    }
   }
 }
 
@@ -27,6 +61,10 @@
   &::before {
     background: url("../../images/icons/stack.svg#radio") no-repeat 50%;
     background-size: 13px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 20px;
+    }
   }
 }
 
@@ -34,6 +72,10 @@
   &::before {
     background: url("../../images/icons/stack.svg#radio") no-repeat 50%;
     background-size: 13px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 20px;
+    }
   }
   opacity: 0.3;
 }

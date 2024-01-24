@@ -1,6 +1,7 @@
 .footer {
   background-color: $bg-grey;
   padding: 40px 0;
+  width: 100%;
 }
 
 .footer__wrapper {
@@ -8,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -17,8 +18,19 @@
 }
 
 .footer__logo {
+  display: flex;
+  justify-content: center;
   color: $black-color-text1;
+  padding-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid $border-form2;
   transition: 0.2s;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    justify-content: flex-start;
+  }
 
   &:hover,
   &:focus {
@@ -27,6 +39,20 @@
 
   &:active {
     color: $logo-active;
+  }
+}
+
+.footer__social.social {
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $border-form2;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    justify-content: flex-start;
   }
 }
 

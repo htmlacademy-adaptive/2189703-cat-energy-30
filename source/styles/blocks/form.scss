@@ -1,22 +1,116 @@
+.form__program {
+  @media (min-width: $desctop-width) {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+  }
+}
+
+.form__program .form__fieldset {
+  border-bottom: 1px solid $border-form2;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.form__fieldset--master {
+  padding-top: 2px;
+
+  @media (min-width: $desctop-width) {
+    padding-bottom: 5px;
+  }
+}
+
+
 .form__legend {
   @include title($black-color-text);
+  position: relative;
+  width: 227px;
+  padding: 24px 20px;
   font-size: 24px;
   line-height: 26px;
+  background-color: $white-color-text;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 65px;
+    width: 514px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form__fieldset .form__control {
+  @include center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  &--master {
+    padding-bottom: 0;
+
+    @media (min-width: $desctop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 80px;
+    }
+  }
 }
 
 .form__comment {
   @include title-uppercase($base-color-text);
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.form__inner {
+  @include center;
+  display: grid;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.form__button {
+  @include button($white-color-text, $bg-green);
+  margin-bottom: 21px;
+  width: 100%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 14px;
+    width: 284px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 570px;
+  }
 }
 
 .form__reguired {
   line-height: 18px;
   color: $black-color-text;
-}
+  justify-self: center;
 
-.form__button {
-  @include button($white-color-text, $bg-green);
-  width: 100%;
-  border: none;
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+  }
 }

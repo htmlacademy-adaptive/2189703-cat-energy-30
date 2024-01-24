@@ -8,13 +8,10 @@
   margin: 0 auto;
   min-height: 100%;
   min-width: 320px;
-
-  @media (min-width: $desctop-width) {
-    width: 1420px;
-  }
 }
 
 .page__wrapper {
+  width: 100%;
   position: relative;
 
   &::after {

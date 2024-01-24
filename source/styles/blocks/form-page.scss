@@ -1,3 +1,16 @@
 .form-page {
   margin: 0;
 }
+
+.form-page__wrapper {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desctop-width) {
+    @include center;
+  }
+}
