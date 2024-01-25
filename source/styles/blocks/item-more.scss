@@ -1,18 +1,41 @@
-.item-more__wrap {
+.item-more {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 20px 40px 20px;
+    height: 429px;
+    align-self: end;
+    background-image: none;
+    border: 2px solid $bg-grey;
+  }
+
+  @media (min-width: $desctop-width) {
+    height: 431px;
+  }
 }
 
 .item-more__title {
   @include title-uppercase($black-color-text1);
-
+  margin-bottom: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    width: 170px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 26px;
+  }
 
   &::before {
     content: "";
@@ -20,14 +43,52 @@
     width: 30px;
     height: 30px;
     background: $white-color-text url("../../images/icons/stack.svg#plus") no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (min-width: $desctop-width) {
+      margin-bottom: 40px;
+    }
   }
 }
 
 .item-more__text {
+  margin: 0;
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+    width: 170px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 90px;
+  }
 }
 
 .item-more__button {
   @include button($base-color-text, $bg-grey);
+  width: calc(100% - 40px);
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 169px;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $border-grey2;
+  }
 }

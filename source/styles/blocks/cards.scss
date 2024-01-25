@@ -1,3 +1,28 @@
+.cards {
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-bottom: 36px;
+  }
+}
+
 .cards__list {
   @include list();
+  display: grid;
+  justify-items: center;
+
+  @media (min-width: $tablet-width) {
+    @include center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 60px;
+  }
 }

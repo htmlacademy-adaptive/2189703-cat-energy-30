@@ -36,6 +36,10 @@
     &::after {
       background: none;
     }
+
+    @media (min-width: $desctop-width) {
+      width: 1420px;
+    }
   }
 
   @media (min-width: $desctop-width) {

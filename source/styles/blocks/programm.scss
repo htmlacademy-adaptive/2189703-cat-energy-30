@@ -26,6 +26,7 @@
   @media (min-width: $desctop-width) {
     grid-template-columns: repeat(2, 570px);
     gap: 80px;
+    justify-content: space-between;
   }
 }
 
