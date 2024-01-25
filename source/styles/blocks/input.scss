@@ -1,22 +1,49 @@
 .input {
-  display: flex;
+  padding-bottom: 24px;
+  display: grid;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+    gap: 20px;
+  }
+
+  @media (min-width: $desctop-width) {
+    gap: 20px;
+  }
 }
 
-.input,
-.input__field::placeholder {
-  @include title-uppercase($base-color-text);
-  font-size: 16px;
-  line-height: 18px;
+.input__wrapper {
+  display: flex;
+  gap: 1px;
 }
 
 .input__label {
   padding: 13px;
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+  }
+}
+
+.input,
+.input__field::placeholder {
+  @include title-uppercase($base-color-text);
+  @include center;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .input__wrap {
   position: relative;
-
+  flex-grow: 1;
   display: flex;
   align-items: center;
 }
@@ -28,6 +55,12 @@
   padding-right: 32px;
   border: 1px solid $border-form;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    padding: 11px 20px;
+    padding-top: 18px;
+  }
 
   &:hover {
     border-color: $border-form-hover;

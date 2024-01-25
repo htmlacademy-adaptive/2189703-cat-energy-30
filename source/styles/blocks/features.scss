@@ -1,14 +1,48 @@
-.features__title {
-  @include title($black-color-text);
-  font-size: 36px;
-  line-height: 40px;
+.features {
+  @include center;
 }
 
-.features__item {
-  &::marker {
-    font-size: 0;
+.features__title {
+  @include title($black-color-text);
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
   }
 }
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px;
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 95px;
+  }
+}
+
+// .features__item {
+//   &::marker {
+//     font-size: 0;
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     &::marker {
+//       color: $bg-grey;
+//       font-size: 280px;
+//       font-style: normal;
+//       font-weight: 400;
+//       line-height: 280px;
+//     }
+//   }
+// }
 
 .features__icon {
   display: flex;

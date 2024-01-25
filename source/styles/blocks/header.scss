@@ -1,5 +1,22 @@
 .header {
-  display: block;
+  width: 100%;
+}
+
+.header__wrapper {
+  @include center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  height: 65px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-top: 55px;
+  }
 }
 
 .header__logo {

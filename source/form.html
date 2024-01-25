@@ -38,7 +38,7 @@
         </nav>
       </div>
     </header>
-    <main class="form-page">
+    <main class="page__main form-page">
       <div class="form-page__wrapper">
         <header class="header-form">
           <h1 class="header-form__title">Подбор программы</h1>
@@ -46,59 +46,61 @@
         </header>
 
         <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
-          <div class="form__fieldset" role="group" aria-labelledby="cat">
-            <div class="form__legend visually-hidden" id="cat">Данные кота</div>
-            <div class="form__control">
-              <div class="input">
-                <label class="input__label" for="name">Имя:*</label>
-                <div class="input__wrap">
-                  <input class="input__field" type="text" name="name" id="name" placeholder="Барсик" required>
+          <div class="form__program">
+            <div class="form__fieldset" role="group" aria-labelledby="pet">
+              <div class="form__legend visually-hidden" id="pet">Данные кота</div>
+              <div class="form__control input">
+                <div class="input__wrapper">
+                  <label class="input__label" for="name">Имя:*</label>
+                  <div class="input__wrap">
+                    <input class="input__field" type="text" name="name" id="name" placeholder="Барсик" required>
+                  </div>
+                </div>
+                <div class="input__wrapper">
+                  <label class="input__label" for="weight">Вес &nbsp;(кг):*</label>
+                  <div class="input__wrap">
+                    <input class="input__field" type="text" name="weight" id="weight" placeholder="7" required>
+                  </div>
+                </div>
+                <div class="input__wrapper">
+                  <label class="input__label" for="age">Возраст&nbsp;(лет):</label>
+                  <div class="input__wrap">
+                    <input class="input__field" type="text" name="age" id="age" placeholder="7">
+                  </div>
                 </div>
               </div>
-              <div class="input">
-                <label class="input__label" for="weight">Вес (кг):*</label>
-                <div class="input__wrap">
-                  <input class="input__field" type="text" name="weight" id="weight" placeholder="7" required>
-                </div>
-              </div>
-              <div class="input">
-                <label class="input__label" for="age">Возраст (лет):</label>
-                <div class="input__wrap">
-                  <input class="input__field" type="text" name="age" id="age" placeholder="7">
-                </div>
+            </div>
+
+            <div class="form__fieldset" role="group" aria-labelledby="programm">
+              <div class="form__legend visually-hidden" id="programm">Выбор программы.</div>
+              <div class="form__control radio">
+                <label class="radio__label" for="slim">
+                  <input class="radio__input visually-hidden" type="radio" name="programm" id="slim" value="slim" checked>
+                  <span class="radio__text">Похудение</span>
+                </label>
+                <label class="radio__label" for="pro">
+                  <input class="radio__input visually-hidden" type="radio" name="programm" id="pro" value="pro">
+                  <span class="radio__text">Набор массы</span>
+                </label>
+                <label class="radio__label" for="advice">
+                  <input class="radio__input visually-hidden" type="radio" name="programm" id="advice" value="advice">
+                  <span class="radio__text">Не знаю (Нужен ваш совет)</span>
+                </label>
               </div>
             </div>
           </div>
 
-          <div class="form__fieldset" role="group" aria-labelledby="programm">
-            <div class="form__legend visually-hidden" id="programm">Выбор программы.</div>
-            <div class="form__control">
-              <label class="radio" for="slim">
-                <input class="radio__input visually-hidden" type="radio" name="programm" id="slim" value="slim" checked>
-                <span class="radio__text">Похудение</span>
-              </label>
-              <label class="radio" for="pro">
-                <input class="radio__input visually-hidden" type="radio" name="programm" id="pro" value="pro">
-                <span class="radio__text">Набор массы</span>
-              </label>
-              <label class="radio" for="advice">
-                <input class="radio__input visually-hidden" type="radio" name="programm" id="advice" value="advice">
-                <span class="radio__text">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="form__fieldset" role="group" aria-labelledby="master">
+          <div class="form__fieldset form__fieldset--master" role="group" aria-labelledby="master">
             <div class="form__legend" id="master">Контактные данные (владельца кота)</div>
-            <div class="form__control">
-              <div class="input">
+            <div class="form__control form__control--master input">
+              <div class="input__wrapper">
                 <label class="input__label" for="email">E-mail:*</label>
                 <div class="input__wrap input__wrap--email">
                   <input class="input__field" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" required>
                   <span class="input__icon"></span>
                 </div>
               </div>
-              <div class="input">
+              <div class="input__wrapper">
                 <label class="input__label" for="tel">Телефон:*</label>
                 <div class="input__wrap input__wrap--phone">
                   <input class="input__field" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
@@ -116,20 +118,20 @@
 
           <div class="form__fieldset" role="group" aria-labelledby="add">
             <div class="form__legend" id="add">Дополнительно</div>
-            <div class="form__control">
-              <label class="checkbox" for="sweetener">
+            <div class="form__control checkbox">
+              <label class="checkbox__label" for="sweetener">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" value="сахарозаменитель" checked>
                 <span class="checkbox__text">Cахарозаменитель</span>
               </label>
-              <label class="checkbox" for="water">
+              <label class="checkbox__label" for="water">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="water" id="water" value="Питьевая вода">
                 <span class="checkbox__text">Питьевая вода</span>
               </label>
-              <label class="checkbox" for="milk">
+              <label class="checkbox__label" for="milk">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="milk" id="milk" value="Молоко">
                 <span class="checkbox__text">Молоко</span>
               </label>
-              <label class="checkbox" for="vitamins">
+              <label class="checkbox__label" for="vitamins">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins" id="vitamins" value="Bитамины">
                 <span class="checkbox__text">Bитамины</span>
               </label>
@@ -142,7 +144,7 @@
         </form>
       </div>
 
-      <section class="contacts">
+      <section class="contacts contacts--fond">
         <h2 class="contacts__title visually-hidden">Адрес магазина "Кэт энерджи".</h2>
         <div class="contacts__text">
           <p class="contacts__slogan">
@@ -153,12 +155,9 @@
             <span>Санкт-Петербург</span>
           </p>
         </div>
-        <picture>
-          <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.jpg 1x, images/map/map-desktop@2x.jpg 2x" width="1440" height="400">
-          <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.jpg 1x, images/map/map-tablet@2x.jpg 2x" width="768" height="400">
-          <img class="contacts__location" src="images/map/map-mobile@1x.jpg" srcset="images/map/map-mobile@2x.jpg 2x" alt="Расположение магазина 'Кэт энерджи' на карте." width="320" height="362">
-        </picture>
+        <div class="contacts__map"></div>
       </section>
+
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
