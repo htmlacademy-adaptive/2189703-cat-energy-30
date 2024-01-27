@@ -14,14 +14,14 @@
     <div class="page__wrapper">
       <header class="header">
         <div class="header__wrapper">
-          <a class="header__logo" href="/">
-            <picture>
-              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header-desktop.svg" width="174" height="50">
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="174" height="50">
-              <img src="images/logo-header-mobile.svg" width="190" height="38" alt="Кэт энерджи - на главную.">
-            </picture>
-          </a>
-          <nav class="header__nav-page nav-page">
+            <a class="header__logo" href="/">
+              <picture>
+                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header-desktop.svg" width="202" height="59">
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="174" height="50">
+                <img src="images/logo-header-mobile.svg" width="190" height="38" alt="Кэт энерджи - на главную.">
+              </picture>
+            </a>
+          <nav class="header__nav-page nav-page  nav-page--nojs">
             <button class="nav-page__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -97,23 +97,34 @@
             <div class="features__icon">
               <img src="images/content-svg/leaf.svg" width="30" height="32" alt="Полезные питательные вещества.">
             </div>
-            Функциональное питание содержит только полезные питательные вещества.
+            <p class="features__text">
+              Функциональное питание содержит только полезные питательные вещества.
+            </p>
           </li>
           <li class="features__item">
             <div class="features__icon">
               <img src="images/content-svg/powder.svg" width="27" height="29" alt="В виде порошка.">
             </div>
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+            <p class="features__text">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
           <li class="features__item">
             <div class="features__icon">
               <img src="images/content-svg/eat.svg" width="26" height="30" alt="Заменит прием еды.">
             </div>
-            Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <p class="features__text">
+              Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
+          </li>
           <li class="features__item">
             <div class="features__icon">
               <img src="images/content-svg/time.svg" width="27" height="31" alt="Подействует через месяц.">
             </div>
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+            <p class="features__text">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            </p>
+          </li>
           </ol>
       </section>
 
@@ -130,45 +141,46 @@
               <dt class="example__term">Затрачено времени</dt>
               <dd class="example__definition">60 ДНЕЙ</dd>
             </dl>
-            <dl class="example__element example__element--price">
-              <dt class="example__term example__term--price">Затраты на питание:</dt>
-              <dd class="example__definition example__definition--price">15 000 РУБ.</dd>
-            </dl>
           </div>
-        <div class="example__slider slider">
-          <div class="slider__left">
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-before-tablet@1x.png 1x, images/slider/slider-before-tablet@2x.png 2x" width="560" height="512">
-              <img src="images/slider/slider-before-mobile@1x.png" srcset="images/slider/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фотография кота до программы.">
-            </picture>
+          <div class="example__price">
+            <span>Затраты на питание:</span>
+            <span>15 000 РУБ.</span>
           </div>
-          <div class="slider__right">
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-after-tablet@1x.png 1x, images/slider/slider-after-tablet@2x.png 2x" width="560" height="512">
-              <img src="images/slider/slider-after-mobile@1x.png" srcset="images/slider/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фотография кота до программы.">
-            </picture>
+          <div class="example__slider slider">
+            <div class="slider__left">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-before-tablet@1x.png 1x, images/slider/slider-before-tablet@2x.png 2x" width="560" height="512">
+                <img src="images/slider/slider-before-mobile@1x.png" srcset="images/slider/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фотография кота до программы.">
+              </picture>
+            </div>
+            <div class="slider__right">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-after-tablet@1x.png 1x, images/slider/slider-after-tablet@2x.png 2x" width="560" height="512">
+                <img src="images/slider/slider-after-mobile@1x.png" srcset="images/slider/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фотография кота до программы.">
+              </picture>
+            </div>
+            <button class="slider__control" type="button">
+                <svg width="40" height="40" aria-hidden="true" focusable="false">
+                  <use href="images/icons/stack.svg#thumb"></use>
+                </svg>
+                <span class="slider__control-text visually-hidden">Было — стало.</span>
+            </button>
           </div>
-          <button class="slider__control" type="button">
-              <svg width="40" height="40" aria-hidden="true" focusable="false">
-                <use href="images/icons/stack.svg#thumb"></use>
-              </svg>
-              <span class="slider__control-text visually-hidden">Было — стало.</span>
-          </button>
         </div>
-      </div>
-
       </section>
 
       <section class="contacts">
         <h2 class="contacts__title visually-hidden">Адрес магазина "Кэт энерджи".</h2>
-        <div class="contacts__text">
-          <p class="contacts__slogan">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <p class="contacts__address">
-            ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8
-            <span>Санкт-Петербург</span>
-          </p>
+        <div class="contacts__wrapper">
+          <div class="contacts__text">
+            <p class="contacts__slogan">
+              Приглашаем к&nbsp;сотрудничеству дилеров!
+            </p>
+            <p class="contacts__address">
+              ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8
+              <span>Санкт-Петербург</span>
+            </p>
+          </div>
         </div>
         <div class="contacts__map"></div>
       </section>

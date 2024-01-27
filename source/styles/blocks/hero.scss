@@ -1,12 +1,12 @@
 .hero {
   @include center;
+  padding-top: 27px;
   position: relative;
   min-height: 480px;
-  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
-    min-height: 875px;
+    padding-top: 41px;
+    min-height: 855px;
   }
 
   @media (min-width: $desctop-width) {
@@ -22,6 +22,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding-left: 90px;
     justify-content: flex-start;
     text-align: left;
   }

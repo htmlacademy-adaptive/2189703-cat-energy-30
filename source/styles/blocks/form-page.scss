@@ -4,10 +4,12 @@
 
 .form-page__wrapper {
   display: grid;
+  border-top: 1px solid $border-form2;
 
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
+    border: none;
   }
 
   @media (min-width: $desctop-width) {

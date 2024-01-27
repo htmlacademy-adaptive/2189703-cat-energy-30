@@ -1,14 +1,15 @@
 .checkbox {
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 34px;
   display: grid;
   gap: 12px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 33px;
+    padding-top: 0;
     padding-bottom: 52px;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    column-gap: 52px;
+    row-gap: 32px;
   }
 
   @media (min-width: $desctop-width) {
