@@ -19,8 +19,7 @@
 }
 
 .input__label {
-  padding: 13px;
-  padding-left: 0;
+  padding: 13px 0;
 
   @media (min-width: $tablet-width) {
     padding: 10px 0;
@@ -50,11 +49,13 @@
 
 .input__field {
   width: 100%;
-  padding: 13px;
-  padding-left: 15px;
-  padding-right: 32px;
+  padding: 16px 15px 11px 15px;
   border: 1px solid $border-form;
   outline: none;
+
+  &::placeholder {
+    opacity: 1;
+  }
 
   @media (min-width: $tablet-width) {
     height: 52px;

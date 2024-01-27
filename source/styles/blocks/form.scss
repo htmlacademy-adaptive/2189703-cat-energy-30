@@ -23,23 +23,54 @@
   }
 }
 
-
 .form__legend {
   @include title($black-color-text);
-  position: relative;
-  width: 227px;
-  padding: 24px 20px;
   font-size: 24px;
   line-height: 26px;
   background-color: $white-color-text;
+
+  &--line {
+    position: relative;
+    width: fit-content;
+    padding: 24px 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: calc(50% - 2px);
+      right: 0;
+      width: 100vw;
+      height: 2px;
+      background-color: $bg-green;
+      box-shadow: 100vw 0 0 $bg-green;
+      z-index: -1;
+    }
+  }
+
+  &--add {
+    padding-top: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
     padding-top: 65px;
-    width: 514px;
+    padding-bottom: 64px;
     font-size: 36px;
     line-height: 36px;
+
+    &--line {
+      box-shadow: -40px 0 0 $white-color-text, 40px 0 0 $white-color-text;
+    }
+
+    &--line::before {
+      bottom: calc(50% - 5px);
+    }
+
+    &--add {
+      padding-top: 58px;
+      padding-bottom: 58px;
+    }
   }
 }
 
@@ -51,6 +82,7 @@
   }
 
   &--master {
+    padding-top: 10px;
     padding-bottom: 0;
 
     @media (min-width: $desctop-width) {
@@ -83,7 +115,7 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
     align-items: center;
-    gap: 32px;
+    gap: 65px;
   }
 
   @media (min-width: $desctop-width) {
@@ -111,11 +143,12 @@
 }
 
 .form__reguired {
-  line-height: 18px;
+  line-height: 16px;
   color: $black-color-text;
   justify-self: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
     justify-self: start;
   }
 }

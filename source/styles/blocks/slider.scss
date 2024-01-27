@@ -1,10 +1,10 @@
 .slider {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 140px 1fr;
   width: 280px;
   height: 256px;
-  justify-content: center;
-  align-items: center;
+
 
   @media (min-width: $tablet-width) {
     width: 560px;
@@ -20,44 +20,41 @@
   }
 }
 
+.slider__left img,
+.slider__right img {
+  min-width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 560px;
+    height: 512px;
+  }
+}
+
 .slider__left {
-  position: absolute;
-  left: 0;
-  display: flex;
-  width: calc(var(--min-width)/2);
-  align-items: center;
-  flex-shrink: 0;
-  z-index: 2;
+  width: 140px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
 }
 
 .slider__right {
   position: absolute;
-  right: 10px;
+  right: 0;
   display: flex;
-  width: calc(var(--min-width)/2);
+  justify-content: end;
+  width: 140px;
   overflow: hidden;
-  align-items: center;
-  flex: 1 0 0;
-}
 
-
-.slider__left img {
-
-  object-fit: cover;
-  min-width: 280px;
-  box-sizing: content-box;
-}
-
-.slider__right img {
-
-  object-fit: cover;
-  min-width: var(--min-width);
-  box-sizing: content-box;
-  transform: translateX(-50%);
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
 }
 
 .slider__control {
+  left: 50%;
   position: absolute;
   z-index: 4;
   display: flex;
@@ -72,6 +69,10 @@
   border-radius: 2px;
   border: none;
   transition: 0.2s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 
 
   &:hover,

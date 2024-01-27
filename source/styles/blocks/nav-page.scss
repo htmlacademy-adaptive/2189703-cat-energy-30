@@ -99,8 +99,7 @@
 
 .nav-page__link {
   @include title-uppercase($black-color-text);
-  padding-top: 22px;
-  padding-bottom: 23px;
+  padding: 22px 20px 23px 20px;
   display: grid;
   font-size: 20px;
   line-height: 20px;
@@ -109,6 +108,8 @@
   z-index: 10;
 
   &:nth-last-of-type(1) {
+    padding-left: 0;
+    padding-right: 0;
     border-top: 1px solid $border-grey;
 
     @media (min-width: $tablet-width) {
