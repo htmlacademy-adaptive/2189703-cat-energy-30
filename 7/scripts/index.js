@@ -1,1 +1,0 @@
-var e=document.querySelector(".nav-page"),a=document.querySelector(".nav-page__toggle");e.classList.remove("nav-page--nojs");e.classList.add("nav-page--closed");e.classList.remove("nav-page--opened");a.addEventListener("click",()=>{e.classList.toggle("nav-page--closed"),e.classList.toggle("nav-page--opened")});
