@@ -36,18 +36,19 @@
 
 @mixin button($color, $bg-color) {
   padding: 10px 26px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: $color;
   text-transform: uppercase;
-
   background-color: $bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+  }
 
   &:hover {
     background-color: $bg-green2;

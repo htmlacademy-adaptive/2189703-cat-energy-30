@@ -17,8 +17,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 60px;
+    top: 65px;
     right: 0;
+    background-color: $bg-hero;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
@@ -36,16 +37,13 @@
     &::after {
       background: none;
     }
-
-    @media (min-width: $desctop-width) {
-      width: 1420px;
-    }
   }
 
   @media (min-width: $desctop-width) {
     &::after {
       top: 0;
       right: 0;
+      background-color: $bg-hero;
       background-image:
         linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
         image-set(
@@ -53,7 +51,7 @@
           url("../../images/background/bg-hero-desktop@2x.jpg") type("image/jpeg") 2x
         );
       background-repeat: no-repeat;
-      background-position: 100%;
+      background-position: 0;
       height: 694px;
       width: 50%;
     }

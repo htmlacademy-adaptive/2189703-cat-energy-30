@@ -75,14 +75,19 @@
 .form__inner {
   @include center;
   display: grid;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-bottom: 60px;
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
     align-items: center;
     gap: 32px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 76px;
   }
 }
 
