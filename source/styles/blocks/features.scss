@@ -1,5 +1,9 @@
 .features {
   @include center;
+
+  @media (min-width: $desctop-width) {
+    padding-top: 24px;
+  }
 }
 
 .features__title {
@@ -27,7 +31,7 @@
 
   @media (min-width: $desctop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 95px;
+    gap: 76px;
   }
 }
 
@@ -61,7 +65,7 @@
 
 .features__item:nth-of-type(1) {
   @media (min-width: $tablet-width) {
-    width: 230px;
+    width: 241px;
 
     &::after {
       padding-right: 20px;
