@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    padding-top: 110px;
+    padding-top: 90px;
     min-height: 630px;
   }
 }
@@ -25,6 +25,10 @@
     padding-left: 90px;
     justify-content: flex-start;
     text-align: left;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -90,7 +94,8 @@
   @media (min-width: $desctop-width) {
     width: 552px;
     height: 499px;
-    left: 60%;
+    left: 58%;
+    bottom: 19%;
     z-index: 1;
   }
 }

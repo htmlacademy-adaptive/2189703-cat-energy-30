@@ -11,8 +11,9 @@
   }
 
   @media (min-width: $desctop-width) {
-    padding-top: 69px;
-    background-image: linear-gradient($white-color-text 30%, $bg-grey2 30%, $bg-grey2 100%);
+    padding-top: 21px;
+    padding-bottom: 56px;
+    background-image: linear-gradient($white-color-text 25%, $bg-grey2 25%, $bg-grey2 100%);
     border: none;
   }
 }
@@ -27,7 +28,8 @@
   }
 
   @media (min-width: $desctop-width) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 560px;
+    column-gap: 228px;
     grid-template-rows: repeat(4, auto);
     justify-items: start;
   }
@@ -73,7 +75,7 @@
 
   @media (min-width: $tablet-width) {
     justify-self: start;
-    margin-bottom: 104px;
+    margin-bottom: 52px;
     grid-template-columns: 162px 162px;
     column-gap: 43px;
   }

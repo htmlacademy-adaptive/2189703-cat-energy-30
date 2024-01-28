@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    padding-top: 55px;
+    padding-top: 30px;
     min-height: 114px;
     background-color: transparent;
   }
@@ -53,6 +53,7 @@
   background-color: $white-color-text;
 
   @media (min-width: $desctop-width) {
+    padding-top: 3px;
     background-color: transparent;
   }
 }
