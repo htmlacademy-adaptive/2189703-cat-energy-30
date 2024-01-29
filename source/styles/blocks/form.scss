@@ -24,6 +24,10 @@
   }
 }
 
+.form__fieldset--comment {
+  max-width: 1220px;
+}
+
 .form__legend {
   @include title($black-color-text);
   font-size: 24px;

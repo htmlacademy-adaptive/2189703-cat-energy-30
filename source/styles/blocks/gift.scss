@@ -19,7 +19,7 @@
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
-        url("../../images/background/bg-catalog-tablet@1x.webp") 1x,
+        url("../../images/background/bg-catalog-tablet@1x.webp") type("image/webp") 1x,
         url("../../images/background/bg-catalog-tablet@1x.webp") type("image/webp") 2x,
         url("../../images/background/bg-catalog-tablet@1x.jpg") type("image/jpeg") 1x,
         url("../../images/background/bg-catalog-tablet@2x.jpg") type("image/jpeg") 2x
@@ -56,8 +56,8 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
-    width: 552px;
+    padding: 3px 15px 0 5px;
+    width: 560px;
     flex-direction: row;
     justify-content: space-between;
     text-align: start;

@@ -2,6 +2,8 @@
   padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
     padding-bottom: 40px;
   }
 
@@ -18,12 +20,14 @@
 
   @media (min-width: $tablet-width) {
     @include center;
+    width: 908px;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
     row-gap: 61px;
   }
 
   @media (min-width: $desctop-width) {
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
     row-gap: 63px;
