@@ -61,6 +61,14 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .page__body--nojs .page__wrapper {
+    &::after {
+      top: 265px;
+    }
+  }
+}
+
 .page__main {
   width: 100%;
   flex-grow: 1;

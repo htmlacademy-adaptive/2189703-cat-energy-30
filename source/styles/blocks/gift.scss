@@ -6,6 +6,8 @@
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     image-set(
+      url("../../images/background/bg-catalog-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/background/bg-catalog-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/background/bg-catalog-mobile@1x.jpg") type("image/jpeg") 1x,
       url("../../images/background/bg-catalog-mobile@2x.jpg") type("image/jpeg") 2x
     );
@@ -17,6 +19,8 @@
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
+        url("../../images/background/bg-catalog-tablet@1x.webp") 1x,
+        url("../../images/background/bg-catalog-tablet@1x.webp") type("image/webp") 2x,
         url("../../images/background/bg-catalog-tablet@1x.jpg") type("image/jpeg") 1x,
         url("../../images/background/bg-catalog-tablet@2x.jpg") type("image/jpeg") 2x
       );
@@ -26,10 +30,13 @@
     margin: 0;
     padding-left: 42px;
     padding-right: 42px;
+    padding-top: 5px;
     min-height: 280px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
+        url("../../images/background/bg-catalog-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/background/bg-catalog-desktop@2x.webp") type("image/webp") 2x,
         url("../../images/background/bg-catalog-desktop@1x.jpg") type("image/jpeg") 1x,
         url("../../images/background/bg-catalog-desktop@2x.jpg") type("image/jpeg") 2x
       );

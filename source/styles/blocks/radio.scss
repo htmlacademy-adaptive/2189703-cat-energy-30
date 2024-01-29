@@ -1,4 +1,4 @@
-.radio {
+.radio.form__control {
   padding-top: 22px;
   padding-bottom: 19px;
   display: grid;
@@ -31,6 +31,10 @@
     gap: 20px;
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &::before {
     content: "";
     display: flex;
@@ -38,7 +42,7 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    border: 1px solid#cdcdcd;
+    border: 1px solid $border-grey;
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
@@ -47,9 +51,11 @@
     }
   }
 
-  &:hover::before {
-    background: url("../../images/icons/stack.svg#radio") no-repeat 50%;
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid $border-form-focus;
     background-size: 15px;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       background-size: 20px;

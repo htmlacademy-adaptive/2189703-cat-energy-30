@@ -1,11 +1,14 @@
 .footer {
   background-color: $bg-grey;
   padding: 40px 0;
-  padding-top: 50px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     min-height: 169px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-top: 50px;
   }
 }
 
@@ -24,11 +27,11 @@
 }
 
 .footer__logo {
+  padding-bottom: 19px;
   display: flex;
   justify-content: center;
   color: $black-color-text1;
-  padding-bottom: 20px;
-  width: 128px;
+  width: 100%;
   border-bottom: 1px solid $border-form2;
   transition: 0.2s;
 
@@ -50,7 +53,7 @@
 
 .footer__social.social {
   padding-bottom: 15px;
-  min-width: 132px;
+  width: 100%;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid $border-form2;
@@ -78,7 +81,7 @@
   transition: 0.2s;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    min-width: 168px;
     gap: 22px;
   }
 
