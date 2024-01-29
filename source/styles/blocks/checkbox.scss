@@ -15,6 +15,7 @@
   @media (min-width: $desctop-width) {
     padding-bottom: 60px;
     grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
   }
 }
 
@@ -39,7 +40,7 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    border: 1px solid#cdcdcd;
+    border: 1px solid $border-grey3;
 
     @media (min-width: $tablet-width) {
       width: 40px;
@@ -47,8 +48,13 @@
     }
   }
 
-  &:hover::before {
-    background: url("../../images/icons/stack.svg#checkbox") no-repeat 50%;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid $border-form-focus;
     background-size: 18px 14px;
 
     @media (min-width: $tablet-width) {
