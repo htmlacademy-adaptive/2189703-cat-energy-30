@@ -1,9 +1,16 @@
 .social {
   @include list;
+  padding-bottom: 15px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    padding-left: 27px;
+    padding-top: 8px;
+  }
 }
 
 .social__link {
