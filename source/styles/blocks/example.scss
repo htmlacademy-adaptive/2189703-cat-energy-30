@@ -79,6 +79,10 @@
     grid-template-columns: 162px 162px;
     column-gap: 43px;
   }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .example__element {

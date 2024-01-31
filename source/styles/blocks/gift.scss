@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $bg-hero;
   background-image:
     linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     image-set(
@@ -20,7 +21,7 @@
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       image-set(
         url("../../images/background/bg-catalog-tablet@1x.webp") type("image/webp") 1x,
-        url("../../images/background/bg-catalog-tablet@1x.webp") type("image/webp") 2x,
+        url("../../images/background/bg-catalog-tablet@2x.webp") type("image/webp") 2x,
         url("../../images/background/bg-catalog-tablet@1x.jpg") type("image/jpeg") 1x,
         url("../../images/background/bg-catalog-tablet@2x.jpg") type("image/jpeg") 2x
       );

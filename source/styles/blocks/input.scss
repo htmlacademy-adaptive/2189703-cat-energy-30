@@ -1,15 +1,38 @@
 .input {
-  padding-bottom: 24px;
+  @include center;
+  margin: 0 20px;
+  padding-top: 38px;
+  padding-bottom: 21px;
   display: grid;
   gap: 11px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 72px;
+    margin: 0;
+    padding-bottom: 61px;
     gap: 20px;
   }
 
   @media (min-width: $desctop-width) {
+    padding: 0;
     gap: 20px;
+  }
+
+  &--master {
+    padding-top: 12px;
+    padding-bottom: 3px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 39px;
+      padding-bottom: 31px;
+    }
+
+    @media (min-width: $desctop-width) {
+      padding-top: 54px;
+      padding-bottom: 35px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 80px;
+    }
   }
 }
 
@@ -19,23 +42,47 @@
 }
 
 .input__label {
+  @include title-uppercase($base-color-text);
   padding: 13px 0;
   padding-top: 16px;
-
-  @media (min-width: $tablet-width) {
-    padding: 10px 0;
-  }
-}
-
-.input,
-.input__field {
-  @include title-uppercase($base-color-text);
-  @include center;
   font-size: 16px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.input__field {
+  @include title-uppercase($base-color-text);
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  padding: 15px 12px 13px 14px;
+  border: 1px solid $border-form;
+  outline: none;
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: $border-form-hover;
+  }
+
+  &:focus {
+    box-shadow: inset 2px 2px 0 $base-color-text, inset -2px -2px 0 $base-color-text;
+  }
+
+  &:focus:invalid {
+    box-shadow: inset 2px 2px 0 $border-form-error, inset -2px -2px 0 $border-form-error;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+    height: 52px;
     font-size: 20px;
     line-height: normal;
   }
@@ -48,42 +95,9 @@
   align-items: center;
 }
 
-.input__field {
-  margin: 0;
-  width: 100%;
-  padding: 14px 15px 13px 15px;
-  border: 1px solid $border-form;
-  outline: none;
-
-  @media (min-width: $desctop-width) {
-    padding: 11px 20px;
-  }
-
-  &::placeholder {
-    opacity: 1;
-  }
-
-  @media (min-width: $tablet-width) {
-    height: 52px;
-    padding: 11px 20px;
-  }
-
-  &:hover {
-    border-color: $border-form-hover;
-  }
-
-  &:focus {
-    box-shadow: inset 2px 2px 0 $base-color-text, 2px 2px 0 $base-color-text;
-  }
-
-  &:focus:invalid {
-    box-shadow: inset 2px 2px 0 $border-form-error, 2px 2px 0 $border-form-error;
-  }
-}
-
 .input__icon {
   position: absolute;
-  right: 15px;
+  right: 12px;
   width: 20px;
   height: 20px;
   background-color: $black-color-text;

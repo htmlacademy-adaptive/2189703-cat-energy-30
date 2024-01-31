@@ -1,87 +1,86 @@
 .checkbox {
-  padding-top: 10px;
-  padding-bottom: 34px;
+  padding-top: 14px;
+  padding-bottom: 32px;
   display: grid;
-  gap: 12px;
+  gap: 13px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 19px;
     padding-bottom: 52px;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 52px;
-    row-gap: 32px;
+    column-gap: 55px;
+    row-gap: 33px;
   }
 
   @media (min-width: $desctop-width) {
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 2px;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
   }
 }
 
-.checkbox__text {
-  @include title-uppercase($base-color-text);
+.checkbox__label {
   display: flex;
   align-items: center;
   gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    line-height: normal;
+    gap: 20px;
+  }
+}
+
+.checkbox__input {
+  margin: 0;
+  appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-grey3;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    border: 1px solid $border-form-focus;
+    background-size: 18px 14px;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      background-size: 26px 26px;
+    }
+  }
+
+  &:checked {
+    background: url("../../images/icons/stack.svg#checkbox") no-repeat 50%;
+    background-size: 18px 14px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 26px 26px;
+    }
+  }
+}
+
+.checkbox__text {
+  @include title-uppercase($base-color-text);
   font-size: 16px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
-    gap: 20px;
-  }
-
-  &::before {
-    content: "";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid $border-grey3;
-
-    @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
-    }
   }
 
   &:hover {
     cursor: pointer;
   }
-
-  &:hover::before,
-  &:focus::before {
-    border: 1px solid $border-form-focus;
-    background-size: 18px 14px;
-
-    @media (min-width: $tablet-width) {
-      background-size: 26px 26px;
-    }
-  }
-}
-
-.checkbox__input:checked + .checkbox__text {
-  &::before {
-    background: url("../../images/icons/stack.svg#checkbox") no-repeat 50%;
-    background-size: 18px 14px;
-
-    @media (min-width: $tablet-width) {
-      background-size: 26px 26px;
-    }
-  }
 }
 
 .checkbox__input:disabled + .checkbox__text {
-  &::before {
-    background: url("../../images/icons/stack.svg#checkbox") no-repeat 50%;
-    background-size: 18px 14px;
-
-    @media (min-width: $tablet-width) {
-      background-size: 26px 26px;
-    }
-  }
   opacity: 0.3;
 }
